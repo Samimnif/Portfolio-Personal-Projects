@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=TicTacToeGUI
+comment0.text=\r\n\ A\ class\ modelling\ a\ tic-tac-toe\ (noughts\ and\ crosses,\ Xs\ and\ Os)\ game\ in\ a\ \r\n\ GUI\ window.\r\n\ \r\n\ @author\ Sami\ Mnif\ (101199669)\r\n\ @version\ 2022.04.02\r\n
+comment1.params=
+comment1.target=TicTacToeGUI()
+comment1.text=\ \r\n\ Constructs\ a\ new\ Tic-Tac-Toe\ board\ and\ sets\ up\ the\ basic\r\n\ JFrame\ containing\ a\ JTextArea\ in\ a\ JScrollPane\ GUI.\r\n\ Sets\ the\ font,\ title\ and\ the\ size\ of\ the\ window\r\n
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=e
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=e
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.params=e
+comment6.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.text=\ This\ action\ listener\ is\ called\ when\ the\ user\ clicks\ on\ a\ button.\ \r\n
+comment7.params=
+comment7.target=void\ clearBoard()
+comment7.text=\r\n\ Sets\ everything\ up\ for\ a\ new\ game.\ \ Marks\ all\ squares\ in\ the\ Tic\ Tac\ Toe\ board\ as\ empty,\r\n\ and\ indicates\ no\ winner\ yet,\ 9\ free\ squares\ and\ the\ current\ player\ is\ player\ X.\r\n
+comment8.params=row\ col
+comment8.target=boolean\ haveWinner(int,\ int)
+comment8.text=\r\n\ Returns\ true\ if\ filling\ the\ given\ square\ gives\ us\ a\ winner,\ and\ false\r\n\ otherwise.\r\n\r\n\ @param\ int\ row\ of\ square\ just\ set\r\n\ @param\ int\ col\ of\ square\ just\ set\r\n\ \r\n\ @return\ true\ if\ we\ have\ a\ winner,\ false\ otherwise\r\n
+comment9.params=
+comment9.target=void\ disableButtons()
+comment9.text=\r\n\ disables\ all\ the\ buttons\ so\ the\ user\ cannot\ use\ them\ anymore\r\n
+numComments=10
