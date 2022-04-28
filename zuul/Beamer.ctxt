@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Beamer
+comment0.text=\r\n\ Beamer\ is\ a\ subclass\ of\ Item.\r\n\ This\ class\ represents\ a\ beamer\ item\ which\ may\ be\ put\r\n\ in\ a\ room\ in\ the\ game\ of\ Zuul.\r\n\ \r\n\ A\ beamer\ can\ charge\ and\ fire.\ When\ charged\ the\ beamer\ saves\ the\ room\ where\r\n\ it\ was\ chraged\ and\ whenever\ the\ player\ fires\ it,\ the\ beamer\ teleports\ him\r\n\ back\ to\ the\ saved\ room.\r\n\r\n\ @author\ Sami\ Mnif\ (101199669)\r\n\ @version\ 2022.03.19\r\n
+comment1.params=
+comment1.target=Beamer()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Beamer.\r\n\ Created\ Beamer\ item\ using\ the\ Item\ constructor\ and\ sets\ charge\ \r\n\ as\ false\ and\ saveRoom\ as\ null\ by\ default\r\n
+comment2.params=
+comment2.target=boolean\ isCharged()
+comment2.text=\r\n\ isCharged\ is\ a\ method\ that\ returns\ a\ boolean\ indicating\ if\ the\ beamer\ is\r\n\ charged\ or\ not\ (true\ or\ false).\r\n\ \r\n\ @return\ charged\ boolean,\ true\ if\ the\ beamer\ is\ charged,\ false\ otherwise.\r\n
+comment3.params=currentRoom
+comment3.target=void\ charge(Room)
+comment3.text=\r\n\ charge\ is\ a\ method\ that\ charges\ the\ beamer\ by\ setting\ the\ charge\ field\r\n\ as\ true\ and\ saves\ the\ current\ room\ to\ the\ saveRoom\ field.\r\n\ \r\n\ @param\ currenRoom\ Room\ object\ represents\ room\ where\ the\ beamer\ is\ charged\r\n
+comment4.params=
+comment4.target=Room\ fire()
+comment4.text=\r\n\ fire\ method\ fires\ the\ beamer\ by\ setting\ the\ charge\ field\ back\ to\ false\r\n\ and\ returning\ the\ previously\ saved\ room\ in\ saveRoom\ field.\r\n\ Returns\ null\ if\ the\ beamer\ wasn't\ charged.\r\n\ \r\n\ @return\ saveRoom\ the\ room\ where\ the\ beamer\ was\ charged,\ return\ null\ if\ wasn't\ successful\r\n
+numComments=5
