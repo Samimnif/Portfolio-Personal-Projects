@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TransporterRoom
+comment0.text=\r\n\ TransporterRoom\ is\ a\ subclass\ of\ Room.\r\n\ This\ class\ represents\ a\ transport\ room\ which\ will\ transport\ the\ player\ to\ a\ \r\n\ random\ room\ in\ the\ game\ of\ Zuul.\r\n\ \r\n\ The\ transport\ object\ used\ Room\ constructor.\ It\ generates\ random\ number\ that\r\n\ associated\ to\ rooms\ in\ the\ list.\r\n\ The\ player\ then\ exits\ transport\ room\ and\ goes\ to\ the\ random\ selected\ room.\r\n\r\n\ @author\ Sami\ Mnif\ (101199669)\r\n\ @version\ 2022.03.19\r\n
+comment1.params=
+comment1.target=TransporterRoom()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ TransporterRoom\r\n\ Uses\ Room's\ constructor\ to\ intialize\ room.\r\n\ Intializes\ array\ and\ random\r\n
+comment2.params=direction
+comment2.target=Room\ getExit(java.lang.String)
+comment2.text=\r\n\ Returns\ a\ random\ room,\ independent\ of\ the\ direction\ parameter.\r\n\ Gets\ the\ random\ selected\ room\ from\ findRandomRoom()\ method.\r\n\ Overrides\ the\ original\ method.\r\n\r\n\ @param\ direction\ Ignored.\r\n\ @return\ A\ randomly\ selected\ room.\r\n
+comment3.params=
+comment3.target=Room\ findRandomRoom()
+comment3.text=\r\n\ Choose\ a\ random\ room\ and\ returns\ it.\r\n\r\n\ @return\ The\ room\ we\ end\ up\ in\ upon\ leaving\ this\ one.\r\n
+numComments=4

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ Assignment\ 4\r\n\ Used\ the\ provided\ sample\ solution\ to\ assignment\ 3.\r\n\ \r\n\ This\ class\ represents\ an\ item\ which\ may\ be\ put\r\n\ in\ a\ room\ in\ the\ game\ of\ Zuul.\r\n\ \r\n\ @author\ Lynn\ Marshall\ \r\n\ @version\ A3\ Solution\r\n\ \r\n\ @author\ Sami\ Mnif\ (101199669)\r\n\ @version\ 2022.03.19\r\n
+comment1.params=name\ description\ weight
+comment1.target=Item(java.lang.String,\ java.lang.String,\ double)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Item.\r\n\ \r\n\ @param\ name\ The\ short\ name\ for\ the\ item\r\n\ @param\ description\ The\ description\ of\ the\ item\r\n\ @param\ weight\ The\ weight\ of\ the\ item\r\n
+comment2.params=
+comment2.target=java.lang.String\ getDescription()
+comment2.text=\r\n\ Returns\ a\ description\ of\ the\ item,\ including\ its\ name,\r\n\ description\ and\ weight.\r\n\ \r\n\ @return\ \ A\ description\ of\ the\ item\ (name\ ,\ description\ and\ weight)\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Returns\ the\ short\ name\ for\ the\ item.\r\n\ \r\n\ @return\ name\ of\ the\ item\ in\ String\r\n
+numComments=4
