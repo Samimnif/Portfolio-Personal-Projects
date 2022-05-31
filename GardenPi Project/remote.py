@@ -9,7 +9,6 @@ import time
 from screen import *
 from pump import *
 from camera import *
-#from main import *
 import json
 import logging
 
