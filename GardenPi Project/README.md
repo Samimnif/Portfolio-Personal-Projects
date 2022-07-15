@@ -17,11 +17,11 @@ From the converter we will be plugging the Vout+ to the 5V pin in raspberry pi's
 Now we solved the power issue of the project.<br>
 ### 3. Sensors
 We have 4 seonsors + a camera all connected to the raspberry pi.
-       _a. Motion Detection sensor:
+       -a. Motion Detection sensor:
 This sensor will be helping us to detect movement nearby. Once it detects motion we will instruct raspberry pi to take a picture, store it and send a notification through radio frequency signal.
-       _b. Soil Moisture sensor:
+       - b. Soil Moisture sensor:
 The soil moisture sensor detects the moisture of the soil. If the soil is dry we will instruct raspberry pi to enable the water pump to water the plants.
-       _c. Temperature & Humidity sensor:
+       - c. Temperature & Humidity sensor:
 The sensor will be recording the temperature at the site of the GradenPi and will send us the data through rf signal. This sensor will be more helpful in the future to implement other functionalities.
-       _d. Infrared Signal Receiver:
+       - d. Infrared Signal Receiver:
 This receiver will let us controlm the GardenPi manually with a remote controller.
