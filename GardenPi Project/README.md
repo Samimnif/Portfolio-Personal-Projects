@@ -6,9 +6,9 @@ GardenPi is multisensor watering device that is smart amd efficient. It has mult
 ## Objective
 My garden is located 200m from my apartment building. There are no electric outlets for power and since the water hose is shared between neighbours, it is not possible to setup a direct water supply from the tap.
 ## Solution
-   -1. Board
+###1. Board
 Fpr this project I am going to use a rasoberry pi zero w. Raspberry pi is a great board since it can interact with teh GPIO pins using python and its libraries.
-   -2. Power solution
+###2. Power solution
 Since I am going to use this device during summer, the sun will be my main source of power. That is why I am going to use a solar panel to power my raspberry pi.<br>
 The solar panel supplies 5v and 230mAh for the raspberry pi to function. Since we there are no sun during the night, we are going to add batteries so that it can charge during the day and use the batteries at night. The capacity of the batteries are two 2400mAh 3.7V, in total 4800mAh (parallel cells).<br>
 To make sure the batteries charge and raspberry pi getting power, we will be using a TP4056 controller that charges the batteries and supply power.<br>
