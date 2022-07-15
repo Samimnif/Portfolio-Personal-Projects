@@ -16,7 +16,7 @@ The controller will be supplying 3.7V from the batteries. We will be using a DC 
 From the converter we will be plugging the Vout+ to the 5V pin in raspberry pi's pins and plug Vout- in the ground pin of raspberry pi.<br>
 Now we solved the power issue of the project.<br>
 ### 3. Sensors
-We have 4 seonsors + a camera all connected to the raspberry pi.
+       - We have 4 seonsors + a camera all connected to the raspberry pi.
        -a. Motion Detection sensor:
 This sensor will be helping us to detect movement nearby. Once it detects motion we will instruct raspberry pi to take a picture, store it and send a notification through radio frequency signal.
        - b. Soil Moisture sensor:
