@@ -1,0 +1,4 @@
+Partlist exported from Team Hub: Sami Mnif   Project: Admin Project  Board: Mouse Jiggler PCB v3 at 2022-11-13 7:27 PM
+
+Qty Value             Device            Package      Parts Description       
+1   RASPBERRY_PICOSMD RASPBERRY_PICOSMD PICO-PKG-SMD U1    Raspberry Pi Pico 
