@@ -15,8 +15,37 @@ import traceback
 
 logging.basicConfig(level=logging.DEBUG)
 
+def result_display(ip, result):
+    epd = epd2in13b_V4.EPD()
+    epd.init()
+    epd.clear()
+    font20 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 20)
+    font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
+
+    LBlackimage = Image.new('1', (epd.height, epd.width, ), 255)  # 122*250
+    LRYimage = Image.new('1', (epd.height, epd.width), 255)  # 122*250
+    drawblack = ImageDraw.Draw(LBlackimage)
+    drawry = ImageDraw.Draw(LRYimage)
+    newimage = Image.open(os.path.join(picdir, 'carleton2.bmp'))
+    drawry.text((5, 0), 'Result:', font = font20, fill = 0)
+    drawblack.rectangle((0, 0, 70, 21), outline = 0)
+    drawblack.text((0, 20), 'IP: ', font = font18, fill = 0)
+    drawry.text((30, 20), f'{ip}', font = font20, fill = 0)
+    drawblack.text((0, 40), 'VLAN: ', font = font18, fill = 0)
+    drawry.text((60, 40), f'{result["VLAN"]}', font = font20, fill = 0)
+    drawblack.text((0, 60), f'Port: {result["Port"]}', font = font18, fill = 0)
+    drawblack.text((0, 80), f'LAN: {result["LAN"]}', font = font18, fill = 0)
+    drawblack.text((0, 100), f'VoIP VLAN: {result["VOIP"]}', font = font18, fill = 0)
+    LBlackimage.paste(newimage, (200, 0))
+    epd.display(epd.getbuffer(LBlackimage), epd.getbuffer(LRYimage))
+    time.sleep(20)
+
+    print('done func')
+    epd.sleep()
+
 try:
-    logging.info("epd2in13b_V4 Demo")
+    '''
+    logging.info("epd2in13b_V4.txt")
     
     epd = epd2in13b_V4.EPD()
     logging.info("init and Clear")
@@ -68,8 +97,8 @@ try:
     time.sleep(2)
     
     logging.info("3.read bmp file")
-    Blackimage = Image.open(os.path.join(picdir, '2in13b_V4b.bmp'))
-    RYimage = Image.open(os.path.join(picdir, '2in13b_V4b.bmp'))
+    Blackimage = Image.open(os.path.join(picdir, 'B_Logo_SPROTT-H-RGBFullColour_190821.bmp'))
+    RYimage = Image.open(os.path.join(picdir, 'B_Logo_SPROTT-H-RGBFullColour_190821.bmp'))
     epd.display(epd.getbuffer(Blackimage), epd.getbuffer(RYimage))
     time.sleep(2)
     
@@ -85,7 +114,9 @@ try:
     epd.clear()
     
     logging.info("Goto Sleep...")
-    epd.sleep()
+    epd.sleep() '''
+
+    result_display('137.172.168.1',{'VLAN': '301', 'Port': 'FiveGigabitEthernet3/0/4', 'LAN': 'NI7083-AS01-9K.net.carleton.ca', 'VOIP': '2224'})
         
 except IOError as e:
     logging.info(e)

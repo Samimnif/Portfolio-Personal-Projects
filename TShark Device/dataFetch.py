@@ -39,5 +39,6 @@ def ethActive(fileName):
 
 if __name__ == "__main__":
     #print(getData())
-    print(ethActive("ethernetDOWN.txt"))
-    print(ethActive("ethernetUP.txt"))
+    #print(ethActive("ethernetDOWN.txt"))
+    #print(ethActive("ethernetUP.txt"))
+    print(getData("output.json"))
