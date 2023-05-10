@@ -1,0 +1,1100 @@
+[
+  {
+    "_index": "packets-2022-11-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 19, 2022 00:48:54.072424827 GMT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1668818934.072424827",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "23.049937775",
+          "frame.number": "1",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:llc:cdp"
+        },
+        "eth": {
+          "eth.dst": "01:00:0c:cc:cc:cc",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.dst.oui": "65548",
+            "eth.addr": "01:00:0c:cc:cc:cc",
+            "eth.addr_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.addr.oui": "65548",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "90:77:ee:95:48:04",
+          "eth.src_tree": {
+            "eth.src_resolved": "Cisco_95:48:04",
+            "eth.src.oui": "9467886",
+            "eth.src.oui_resolved": "Cisco Systems, Inc",
+            "eth.addr": "90:77:ee:95:48:04",
+            "eth.addr_resolved": "Cisco_95:48:04",
+            "eth.addr.oui": "9467886",
+            "eth.addr.oui_resolved": "Cisco Systems, Inc",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.len": "465"
+        },
+        "llc": {
+          "llc.dsap": "0x000000aa",
+          "llc.dsap_tree": {
+            "llc.dsap.sap": "85",
+            "llc.dsap.ig": "0"
+          },
+          "llc.ssap": "0x000000aa",
+          "llc.ssap_tree": {
+            "llc.ssap.sap": "85",
+            "llc.ssap.cr": "0"
+          },
+          "llc.control": "0x00000003",
+          "llc.control_tree": {
+            "llc.control.u_modifier_cmd": "0x00000000",
+            "llc.control.ftype": "0x00000003"
+          },
+          "llc.oui": "12",
+          "llc.cisco_pid": "0x00002000"
+        },
+        "cdp": {
+          "cdp.version": "2",
+          "cdp.ttl": "180",
+          "cdp.checksum": "0x00004f32",
+          "cdp.checksum.status": "1",
+          "Device ID: NI7083-AS01-9K.net.carleton.ca": {
+            "cdp.tlv.type": "0x00000001",
+            "cdp.tlv.len": "34",
+            "cdp.deviceid": "NI7083-AS01-9K.net.carleton.ca"
+          },
+          "Software Version": {
+            "cdp.tlv.type": "0x00000005",
+            "cdp.tlv.len": "256",
+            "cdp.software_version": "Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)",
+            "cdp.software_version": "Technical Support: http://www.cisco.com/techsupport",
+            "cdp.software_version": "Copyright (c) 1986-2019 by Cisco Systems, Inc.",
+            "cdp.software_version": "Compiled Tue 19-Nov-19 10:04 by mcpre"
+          },
+          "Platform: cisco C9300-48UN": {
+            "cdp.tlv.type": "0x00000006",
+            "cdp.tlv.len": "20",
+            "cdp.platform": "cisco C9300-48UN"
+          },
+          "Addresses": {
+            "cdp.tlv.type": "0x00000002",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Port ID: FiveGigabitEthernet3/0/4": {
+            "cdp.tlv.type": "0x00000003",
+            "cdp.tlv.len": "28",
+            "cdp.portid": "FiveGigabitEthernet3/0/4"
+          },
+          "Capabilities": {
+            "cdp.tlv.type": "0x00000004",
+            "cdp.tlv.len": "8",
+            "cdp.capabilities": "0x00000028",
+            "cdp.capabilities_tree": {
+              "cdp.capabilities.router": "0",
+              "cdp.capabilities.trans_bridge": "0",
+              "cdp.capabilities.src_bridge": "0",
+              "cdp.capabilities.switch": "1",
+              "cdp.capabilities.host": "0",
+              "cdp.capabilities.igmp_capable": "1",
+              "cdp.capabilities.repeater": "0",
+              "cdp.capabilities.voip_phone": "0",
+              "cdp.capabilities.remote": "0",
+              "cdp.capabilities.cvta": "0",
+              "cdp.capabilities.mac_relay": "0"
+            }
+          },
+          "VTP Management Domain: ": {
+            "cdp.tlv.type": "0x00000009",
+            "cdp.tlv.len": "4",
+            "cdp.vtp_management_domain": ""
+          },
+          "Native VLAN: 301": {
+            "cdp.tlv.type": "0x0000000a",
+            "cdp.tlv.len": "6",
+            "cdp.native_vlan": "301"
+          },
+          "Duplex: Full": {
+            "cdp.tlv.type": "0x0000000b",
+            "cdp.tlv.len": "5",
+            "cdp.duplex": "1"
+          },
+          "VoIP VLAN Reply: VLAN 2224": {
+            "cdp.tlv.type": "0x0000000e",
+            "cdp.tlv.len": "7",
+            "cdp.data": "01",
+            "cdp.voice_vlan": "2224"
+          },
+          "Trust Bitmap: 0x00": {
+            "cdp.tlv.type": "0x00000012",
+            "cdp.tlv.len": "5",
+            "cdp.trust_bitmap": "0x00000000"
+          },
+          "Untrusted port CoS: 0x00": {
+            "cdp.tlv.type": "0x00000013",
+            "cdp.tlv.len": "5",
+            "cdp.untrusted_port_cos": "0x00000000"
+          },
+          "Management Addresses": {
+            "cdp.tlv.type": "0x00000016",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR": {
+            "cdp.tlv.type": "0x00001009",
+            "cdp.tlv.len": "41",
+            "cdp.platform": "PID:C9300-48UN,VID:V02,SN:FCW2426D0LR"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2022-11-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 19, 2022 00:49:51.318749409 GMT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1668818991.318749409",
+          "frame.time_delta": "80.296262357",
+          "frame.time_delta_displayed": "80.296262357",
+          "frame.time_relative": "80.296262357",
+          "frame.number": "2",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:llc:cdp"
+        },
+        "eth": {
+          "eth.dst": "01:00:0c:cc:cc:cc",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.dst.oui": "65548",
+            "eth.addr": "01:00:0c:cc:cc:cc",
+            "eth.addr_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.addr.oui": "65548",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "90:77:ee:95:48:04",
+          "eth.src_tree": {
+            "eth.src_resolved": "Cisco_95:48:04",
+            "eth.src.oui": "9467886",
+            "eth.src.oui_resolved": "Cisco Systems, Inc",
+            "eth.addr": "90:77:ee:95:48:04",
+            "eth.addr_resolved": "Cisco_95:48:04",
+            "eth.addr.oui": "9467886",
+            "eth.addr.oui_resolved": "Cisco Systems, Inc",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.len": "465"
+        },
+        "llc": {
+          "llc.dsap": "0x000000aa",
+          "llc.dsap_tree": {
+            "llc.dsap.sap": "85",
+            "llc.dsap.ig": "0"
+          },
+          "llc.ssap": "0x000000aa",
+          "llc.ssap_tree": {
+            "llc.ssap.sap": "85",
+            "llc.ssap.cr": "0"
+          },
+          "llc.control": "0x00000003",
+          "llc.control_tree": {
+            "llc.control.u_modifier_cmd": "0x00000000",
+            "llc.control.ftype": "0x00000003"
+          },
+          "llc.oui": "12",
+          "llc.cisco_pid": "0x00002000"
+        },
+        "cdp": {
+          "cdp.version": "2",
+          "cdp.ttl": "180",
+          "cdp.checksum": "0x00004f32",
+          "cdp.checksum.status": "1",
+          "Device ID: NI7083-AS01-9K.net.carleton.ca": {
+            "cdp.tlv.type": "0x00000001",
+            "cdp.tlv.len": "34",
+            "cdp.deviceid": "NI7083-AS01-9K.net.carleton.ca"
+          },
+          "Software Version": {
+            "cdp.tlv.type": "0x00000005",
+            "cdp.tlv.len": "256",
+            "cdp.software_version": "Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)",
+            "cdp.software_version": "Technical Support: http://www.cisco.com/techsupport",
+            "cdp.software_version": "Copyright (c) 1986-2019 by Cisco Systems, Inc.",
+            "cdp.software_version": "Compiled Tue 19-Nov-19 10:04 by mcpre"
+          },
+          "Platform: cisco C9300-48UN": {
+            "cdp.tlv.type": "0x00000006",
+            "cdp.tlv.len": "20",
+            "cdp.platform": "cisco C9300-48UN"
+          },
+          "Addresses": {
+            "cdp.tlv.type": "0x00000002",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Port ID: FiveGigabitEthernet3/0/4": {
+            "cdp.tlv.type": "0x00000003",
+            "cdp.tlv.len": "28",
+            "cdp.portid": "FiveGigabitEthernet3/0/4"
+          },
+          "Capabilities": {
+            "cdp.tlv.type": "0x00000004",
+            "cdp.tlv.len": "8",
+            "cdp.capabilities": "0x00000028",
+            "cdp.capabilities_tree": {
+              "cdp.capabilities.router": "0",
+              "cdp.capabilities.trans_bridge": "0",
+              "cdp.capabilities.src_bridge": "0",
+              "cdp.capabilities.switch": "1",
+              "cdp.capabilities.host": "0",
+              "cdp.capabilities.igmp_capable": "1",
+              "cdp.capabilities.repeater": "0",
+              "cdp.capabilities.voip_phone": "0",
+              "cdp.capabilities.remote": "0",
+              "cdp.capabilities.cvta": "0",
+              "cdp.capabilities.mac_relay": "0"
+            }
+          },
+          "VTP Management Domain: ": {
+            "cdp.tlv.type": "0x00000009",
+            "cdp.tlv.len": "4",
+            "cdp.vtp_management_domain": ""
+          },
+          "Native VLAN: 301": {
+            "cdp.tlv.type": "0x0000000a",
+            "cdp.tlv.len": "6",
+            "cdp.native_vlan": "301"
+          },
+          "Duplex: Full": {
+            "cdp.tlv.type": "0x0000000b",
+            "cdp.tlv.len": "5",
+            "cdp.duplex": "1"
+          },
+          "VoIP VLAN Reply: VLAN 2224": {
+            "cdp.tlv.type": "0x0000000e",
+            "cdp.tlv.len": "7",
+            "cdp.data": "01",
+            "cdp.voice_vlan": "2224"
+          },
+          "Trust Bitmap: 0x00": {
+            "cdp.tlv.type": "0x00000012",
+            "cdp.tlv.len": "5",
+            "cdp.trust_bitmap": "0x00000000"
+          },
+          "Untrusted port CoS: 0x00": {
+            "cdp.tlv.type": "0x00000013",
+            "cdp.tlv.len": "5",
+            "cdp.untrusted_port_cos": "0x00000000"
+          },
+          "Management Addresses": {
+            "cdp.tlv.type": "0x00000016",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR": {
+            "cdp.tlv.type": "0x00001009",
+            "cdp.tlv.len": "41",
+            "cdp.platform": "PID:C9300-48UN,VID:V02,SN:FCW2426D0LR"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2022-11-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 19, 2022 00:50:43.334842318 GMT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1668819043.334842318",
+          "frame.time_delta": "52.016092909",
+          "frame.time_delta_displayed": "52.016092909",
+          "frame.time_relative": "132.312355266",
+          "frame.number": "3",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:llc:cdp"
+        },
+        "eth": {
+          "eth.dst": "01:00:0c:cc:cc:cc",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.dst.oui": "65548",
+            "eth.addr": "01:00:0c:cc:cc:cc",
+            "eth.addr_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.addr.oui": "65548",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "90:77:ee:95:48:04",
+          "eth.src_tree": {
+            "eth.src_resolved": "Cisco_95:48:04",
+            "eth.src.oui": "9467886",
+            "eth.src.oui_resolved": "Cisco Systems, Inc",
+            "eth.addr": "90:77:ee:95:48:04",
+            "eth.addr_resolved": "Cisco_95:48:04",
+            "eth.addr.oui": "9467886",
+            "eth.addr.oui_resolved": "Cisco Systems, Inc",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.len": "465"
+        },
+        "llc": {
+          "llc.dsap": "0x000000aa",
+          "llc.dsap_tree": {
+            "llc.dsap.sap": "85",
+            "llc.dsap.ig": "0"
+          },
+          "llc.ssap": "0x000000aa",
+          "llc.ssap_tree": {
+            "llc.ssap.sap": "85",
+            "llc.ssap.cr": "0"
+          },
+          "llc.control": "0x00000003",
+          "llc.control_tree": {
+            "llc.control.u_modifier_cmd": "0x00000000",
+            "llc.control.ftype": "0x00000003"
+          },
+          "llc.oui": "12",
+          "llc.cisco_pid": "0x00002000"
+        },
+        "cdp": {
+          "cdp.version": "2",
+          "cdp.ttl": "180",
+          "cdp.checksum": "0x00004f32",
+          "cdp.checksum.status": "1",
+          "Device ID: NI7083-AS01-9K.net.carleton.ca": {
+            "cdp.tlv.type": "0x00000001",
+            "cdp.tlv.len": "34",
+            "cdp.deviceid": "NI7083-AS01-9K.net.carleton.ca"
+          },
+          "Software Version": {
+            "cdp.tlv.type": "0x00000005",
+            "cdp.tlv.len": "256",
+            "cdp.software_version": "Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)",
+            "cdp.software_version": "Technical Support: http://www.cisco.com/techsupport",
+            "cdp.software_version": "Copyright (c) 1986-2019 by Cisco Systems, Inc.",
+            "cdp.software_version": "Compiled Tue 19-Nov-19 10:04 by mcpre"
+          },
+          "Platform: cisco C9300-48UN": {
+            "cdp.tlv.type": "0x00000006",
+            "cdp.tlv.len": "20",
+            "cdp.platform": "cisco C9300-48UN"
+          },
+          "Addresses": {
+            "cdp.tlv.type": "0x00000002",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Port ID: FiveGigabitEthernet3/0/4": {
+            "cdp.tlv.type": "0x00000003",
+            "cdp.tlv.len": "28",
+            "cdp.portid": "FiveGigabitEthernet3/0/4"
+          },
+          "Capabilities": {
+            "cdp.tlv.type": "0x00000004",
+            "cdp.tlv.len": "8",
+            "cdp.capabilities": "0x00000028",
+            "cdp.capabilities_tree": {
+              "cdp.capabilities.router": "0",
+              "cdp.capabilities.trans_bridge": "0",
+              "cdp.capabilities.src_bridge": "0",
+              "cdp.capabilities.switch": "1",
+              "cdp.capabilities.host": "0",
+              "cdp.capabilities.igmp_capable": "1",
+              "cdp.capabilities.repeater": "0",
+              "cdp.capabilities.voip_phone": "0",
+              "cdp.capabilities.remote": "0",
+              "cdp.capabilities.cvta": "0",
+              "cdp.capabilities.mac_relay": "0"
+            }
+          },
+          "VTP Management Domain: ": {
+            "cdp.tlv.type": "0x00000009",
+            "cdp.tlv.len": "4",
+            "cdp.vtp_management_domain": ""
+          },
+          "Native VLAN: 301": {
+            "cdp.tlv.type": "0x0000000a",
+            "cdp.tlv.len": "6",
+            "cdp.native_vlan": "301"
+          },
+          "Duplex: Full": {
+            "cdp.tlv.type": "0x0000000b",
+            "cdp.tlv.len": "5",
+            "cdp.duplex": "1"
+          },
+          "VoIP VLAN Reply: VLAN 2224": {
+            "cdp.tlv.type": "0x0000000e",
+            "cdp.tlv.len": "7",
+            "cdp.data": "01",
+            "cdp.voice_vlan": "2224"
+          },
+          "Trust Bitmap: 0x00": {
+            "cdp.tlv.type": "0x00000012",
+            "cdp.tlv.len": "5",
+            "cdp.trust_bitmap": "0x00000000"
+          },
+          "Untrusted port CoS: 0x00": {
+            "cdp.tlv.type": "0x00000013",
+            "cdp.tlv.len": "5",
+            "cdp.untrusted_port_cos": "0x00000000"
+          },
+          "Management Addresses": {
+            "cdp.tlv.type": "0x00000016",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR": {
+            "cdp.tlv.type": "0x00001009",
+            "cdp.tlv.len": "41",
+            "cdp.platform": "PID:C9300-48UN,VID:V02,SN:FCW2426D0LR"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2022-11-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 19, 2022 00:51:32.994058092 GMT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1668819092.994058092",
+          "frame.time_delta": "49.659215774",
+          "frame.time_delta_displayed": "49.659215774",
+          "frame.time_relative": "181.971571040",
+          "frame.number": "4",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:llc:cdp"
+        },
+        "eth": {
+          "eth.dst": "01:00:0c:cc:cc:cc",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.dst.oui": "65548",
+            "eth.addr": "01:00:0c:cc:cc:cc",
+            "eth.addr_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.addr.oui": "65548",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "90:77:ee:95:48:04",
+          "eth.src_tree": {
+            "eth.src_resolved": "Cisco_95:48:04",
+            "eth.src.oui": "9467886",
+            "eth.src.oui_resolved": "Cisco Systems, Inc",
+            "eth.addr": "90:77:ee:95:48:04",
+            "eth.addr_resolved": "Cisco_95:48:04",
+            "eth.addr.oui": "9467886",
+            "eth.addr.oui_resolved": "Cisco Systems, Inc",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.len": "465"
+        },
+        "llc": {
+          "llc.dsap": "0x000000aa",
+          "llc.dsap_tree": {
+            "llc.dsap.sap": "85",
+            "llc.dsap.ig": "0"
+          },
+          "llc.ssap": "0x000000aa",
+          "llc.ssap_tree": {
+            "llc.ssap.sap": "85",
+            "llc.ssap.cr": "0"
+          },
+          "llc.control": "0x00000003",
+          "llc.control_tree": {
+            "llc.control.u_modifier_cmd": "0x00000000",
+            "llc.control.ftype": "0x00000003"
+          },
+          "llc.oui": "12",
+          "llc.cisco_pid": "0x00002000"
+        },
+        "cdp": {
+          "cdp.version": "2",
+          "cdp.ttl": "180",
+          "cdp.checksum": "0x00004f32",
+          "cdp.checksum.status": "1",
+          "Device ID: NI7083-AS01-9K.net.carleton.ca": {
+            "cdp.tlv.type": "0x00000001",
+            "cdp.tlv.len": "34",
+            "cdp.deviceid": "NI7083-AS01-9K.net.carleton.ca"
+          },
+          "Software Version": {
+            "cdp.tlv.type": "0x00000005",
+            "cdp.tlv.len": "256",
+            "cdp.software_version": "Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)",
+            "cdp.software_version": "Technical Support: http://www.cisco.com/techsupport",
+            "cdp.software_version": "Copyright (c) 1986-2019 by Cisco Systems, Inc.",
+            "cdp.software_version": "Compiled Tue 19-Nov-19 10:04 by mcpre"
+          },
+          "Platform: cisco C9300-48UN": {
+            "cdp.tlv.type": "0x00000006",
+            "cdp.tlv.len": "20",
+            "cdp.platform": "cisco C9300-48UN"
+          },
+          "Addresses": {
+            "cdp.tlv.type": "0x00000002",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Port ID: FiveGigabitEthernet3/0/4": {
+            "cdp.tlv.type": "0x00000003",
+            "cdp.tlv.len": "28",
+            "cdp.portid": "FiveGigabitEthernet3/0/4"
+          },
+          "Capabilities": {
+            "cdp.tlv.type": "0x00000004",
+            "cdp.tlv.len": "8",
+            "cdp.capabilities": "0x00000028",
+            "cdp.capabilities_tree": {
+              "cdp.capabilities.router": "0",
+              "cdp.capabilities.trans_bridge": "0",
+              "cdp.capabilities.src_bridge": "0",
+              "cdp.capabilities.switch": "1",
+              "cdp.capabilities.host": "0",
+              "cdp.capabilities.igmp_capable": "1",
+              "cdp.capabilities.repeater": "0",
+              "cdp.capabilities.voip_phone": "0",
+              "cdp.capabilities.remote": "0",
+              "cdp.capabilities.cvta": "0",
+              "cdp.capabilities.mac_relay": "0"
+            }
+          },
+          "VTP Management Domain: ": {
+            "cdp.tlv.type": "0x00000009",
+            "cdp.tlv.len": "4",
+            "cdp.vtp_management_domain": ""
+          },
+          "Native VLAN: 301": {
+            "cdp.tlv.type": "0x0000000a",
+            "cdp.tlv.len": "6",
+            "cdp.native_vlan": "301"
+          },
+          "Duplex: Full": {
+            "cdp.tlv.type": "0x0000000b",
+            "cdp.tlv.len": "5",
+            "cdp.duplex": "1"
+          },
+          "VoIP VLAN Reply: VLAN 2224": {
+            "cdp.tlv.type": "0x0000000e",
+            "cdp.tlv.len": "7",
+            "cdp.data": "01",
+            "cdp.voice_vlan": "2224"
+          },
+          "Trust Bitmap: 0x00": {
+            "cdp.tlv.type": "0x00000012",
+            "cdp.tlv.len": "5",
+            "cdp.trust_bitmap": "0x00000000"
+          },
+          "Untrusted port CoS: 0x00": {
+            "cdp.tlv.type": "0x00000013",
+            "cdp.tlv.len": "5",
+            "cdp.untrusted_port_cos": "0x00000000"
+          },
+          "Management Addresses": {
+            "cdp.tlv.type": "0x00000016",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR": {
+            "cdp.tlv.type": "0x00001009",
+            "cdp.tlv.len": "41",
+            "cdp.platform": "PID:C9300-48UN,VID:V02,SN:FCW2426D0LR"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2022-11-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 19, 2022 00:52:26.418968773 GMT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1668819146.418968773",
+          "frame.time_delta": "53.424910681",
+          "frame.time_delta_displayed": "53.424910681",
+          "frame.time_relative": "235.396481721",
+          "frame.number": "5",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:llc:cdp"
+        },
+        "eth": {
+          "eth.dst": "01:00:0c:cc:cc:cc",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.dst.oui": "65548",
+            "eth.addr": "01:00:0c:cc:cc:cc",
+            "eth.addr_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.addr.oui": "65548",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "90:77:ee:95:48:04",
+          "eth.src_tree": {
+            "eth.src_resolved": "Cisco_95:48:04",
+            "eth.src.oui": "9467886",
+            "eth.src.oui_resolved": "Cisco Systems, Inc",
+            "eth.addr": "90:77:ee:95:48:04",
+            "eth.addr_resolved": "Cisco_95:48:04",
+            "eth.addr.oui": "9467886",
+            "eth.addr.oui_resolved": "Cisco Systems, Inc",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.len": "465"
+        },
+        "llc": {
+          "llc.dsap": "0x000000aa",
+          "llc.dsap_tree": {
+            "llc.dsap.sap": "85",
+            "llc.dsap.ig": "0"
+          },
+          "llc.ssap": "0x000000aa",
+          "llc.ssap_tree": {
+            "llc.ssap.sap": "85",
+            "llc.ssap.cr": "0"
+          },
+          "llc.control": "0x00000003",
+          "llc.control_tree": {
+            "llc.control.u_modifier_cmd": "0x00000000",
+            "llc.control.ftype": "0x00000003"
+          },
+          "llc.oui": "12",
+          "llc.cisco_pid": "0x00002000"
+        },
+        "cdp": {
+          "cdp.version": "2",
+          "cdp.ttl": "180",
+          "cdp.checksum": "0x00004f32",
+          "cdp.checksum.status": "1",
+          "Device ID: NI7083-AS01-9K.net.carleton.ca": {
+            "cdp.tlv.type": "0x00000001",
+            "cdp.tlv.len": "34",
+            "cdp.deviceid": "NI7083-AS01-9K.net.carleton.ca"
+          },
+          "Software Version": {
+            "cdp.tlv.type": "0x00000005",
+            "cdp.tlv.len": "256",
+            "cdp.software_version": "Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)",
+            "cdp.software_version": "Technical Support: http://www.cisco.com/techsupport",
+            "cdp.software_version": "Copyright (c) 1986-2019 by Cisco Systems, Inc.",
+            "cdp.software_version": "Compiled Tue 19-Nov-19 10:04 by mcpre"
+          },
+          "Platform: cisco C9300-48UN": {
+            "cdp.tlv.type": "0x00000006",
+            "cdp.tlv.len": "20",
+            "cdp.platform": "cisco C9300-48UN"
+          },
+          "Addresses": {
+            "cdp.tlv.type": "0x00000002",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Port ID: FiveGigabitEthernet3/0/4": {
+            "cdp.tlv.type": "0x00000003",
+            "cdp.tlv.len": "28",
+            "cdp.portid": "FiveGigabitEthernet3/0/4"
+          },
+          "Capabilities": {
+            "cdp.tlv.type": "0x00000004",
+            "cdp.tlv.len": "8",
+            "cdp.capabilities": "0x00000028",
+            "cdp.capabilities_tree": {
+              "cdp.capabilities.router": "0",
+              "cdp.capabilities.trans_bridge": "0",
+              "cdp.capabilities.src_bridge": "0",
+              "cdp.capabilities.switch": "1",
+              "cdp.capabilities.host": "0",
+              "cdp.capabilities.igmp_capable": "1",
+              "cdp.capabilities.repeater": "0",
+              "cdp.capabilities.voip_phone": "0",
+              "cdp.capabilities.remote": "0",
+              "cdp.capabilities.cvta": "0",
+              "cdp.capabilities.mac_relay": "0"
+            }
+          },
+          "VTP Management Domain: ": {
+            "cdp.tlv.type": "0x00000009",
+            "cdp.tlv.len": "4",
+            "cdp.vtp_management_domain": ""
+          },
+          "Native VLAN: 301": {
+            "cdp.tlv.type": "0x0000000a",
+            "cdp.tlv.len": "6",
+            "cdp.native_vlan": "301"
+          },
+          "Duplex: Full": {
+            "cdp.tlv.type": "0x0000000b",
+            "cdp.tlv.len": "5",
+            "cdp.duplex": "1"
+          },
+          "VoIP VLAN Reply: VLAN 2224": {
+            "cdp.tlv.type": "0x0000000e",
+            "cdp.tlv.len": "7",
+            "cdp.data": "01",
+            "cdp.voice_vlan": "2224"
+          },
+          "Trust Bitmap: 0x00": {
+            "cdp.tlv.type": "0x00000012",
+            "cdp.tlv.len": "5",
+            "cdp.trust_bitmap": "0x00000000"
+          },
+          "Untrusted port CoS: 0x00": {
+            "cdp.tlv.type": "0x00000013",
+            "cdp.tlv.len": "5",
+            "cdp.untrusted_port_cos": "0x00000000"
+          },
+          "Management Addresses": {
+            "cdp.tlv.type": "0x00000016",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR": {
+            "cdp.tlv.type": "0x00001009",
+            "cdp.tlv.len": "41",
+            "cdp.platform": "PID:C9300-48UN,VID:V02,SN:FCW2426D0LR"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2022-11-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Nov 19, 2022 00:53:26.334089136 GMT",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1668819206.334089136",
+          "frame.time_delta": "59.915120363",
+          "frame.time_delta_displayed": "59.915120363",
+          "frame.time_relative": "295.311602084",
+          "frame.number": "6",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:llc:cdp"
+        },
+        "eth": {
+          "eth.dst": "01:00:0c:cc:cc:cc",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.dst.oui": "65548",
+            "eth.addr": "01:00:0c:cc:cc:cc",
+            "eth.addr_resolved": "CDP/VTP/DTP/PAgP/UDLD",
+            "eth.addr.oui": "65548",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "1",
+            "eth.ig": "1"
+          },
+          "eth.src": "90:77:ee:95:48:04",
+          "eth.src_tree": {
+            "eth.src_resolved": "Cisco_95:48:04",
+            "eth.src.oui": "9467886",
+            "eth.src.oui_resolved": "Cisco Systems, Inc",
+            "eth.addr": "90:77:ee:95:48:04",
+            "eth.addr_resolved": "Cisco_95:48:04",
+            "eth.addr.oui": "9467886",
+            "eth.addr.oui_resolved": "Cisco Systems, Inc",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.len": "465"
+        },
+        "llc": {
+          "llc.dsap": "0x000000aa",
+          "llc.dsap_tree": {
+            "llc.dsap.sap": "85",
+            "llc.dsap.ig": "0"
+          },
+          "llc.ssap": "0x000000aa",
+          "llc.ssap_tree": {
+            "llc.ssap.sap": "85",
+            "llc.ssap.cr": "0"
+          },
+          "llc.control": "0x00000003",
+          "llc.control_tree": {
+            "llc.control.u_modifier_cmd": "0x00000000",
+            "llc.control.ftype": "0x00000003"
+          },
+          "llc.oui": "12",
+          "llc.cisco_pid": "0x00002000"
+        },
+        "cdp": {
+          "cdp.version": "2",
+          "cdp.ttl": "180",
+          "cdp.checksum": "0x00004f32",
+          "cdp.checksum.status": "1",
+          "Device ID: NI7083-AS01-9K.net.carleton.ca": {
+            "cdp.tlv.type": "0x00000001",
+            "cdp.tlv.len": "34",
+            "cdp.deviceid": "NI7083-AS01-9K.net.carleton.ca"
+          },
+          "Software Version": {
+            "cdp.tlv.type": "0x00000005",
+            "cdp.tlv.len": "256",
+            "cdp.software_version": "Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)",
+            "cdp.software_version": "Technical Support: http://www.cisco.com/techsupport",
+            "cdp.software_version": "Copyright (c) 1986-2019 by Cisco Systems, Inc.",
+            "cdp.software_version": "Compiled Tue 19-Nov-19 10:04 by mcpre"
+          },
+          "Platform: cisco C9300-48UN": {
+            "cdp.tlv.type": "0x00000006",
+            "cdp.tlv.len": "20",
+            "cdp.platform": "cisco C9300-48UN"
+          },
+          "Addresses": {
+            "cdp.tlv.type": "0x00000002",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Port ID: FiveGigabitEthernet3/0/4": {
+            "cdp.tlv.type": "0x00000003",
+            "cdp.tlv.len": "28",
+            "cdp.portid": "FiveGigabitEthernet3/0/4"
+          },
+          "Capabilities": {
+            "cdp.tlv.type": "0x00000004",
+            "cdp.tlv.len": "8",
+            "cdp.capabilities": "0x00000028",
+            "cdp.capabilities_tree": {
+              "cdp.capabilities.router": "0",
+              "cdp.capabilities.trans_bridge": "0",
+              "cdp.capabilities.src_bridge": "0",
+              "cdp.capabilities.switch": "1",
+              "cdp.capabilities.host": "0",
+              "cdp.capabilities.igmp_capable": "1",
+              "cdp.capabilities.repeater": "0",
+              "cdp.capabilities.voip_phone": "0",
+              "cdp.capabilities.remote": "0",
+              "cdp.capabilities.cvta": "0",
+              "cdp.capabilities.mac_relay": "0"
+            }
+          },
+          "VTP Management Domain: ": {
+            "cdp.tlv.type": "0x00000009",
+            "cdp.tlv.len": "4",
+            "cdp.vtp_management_domain": ""
+          },
+          "Native VLAN: 301": {
+            "cdp.tlv.type": "0x0000000a",
+            "cdp.tlv.len": "6",
+            "cdp.native_vlan": "301"
+          },
+          "Duplex: Full": {
+            "cdp.tlv.type": "0x0000000b",
+            "cdp.tlv.len": "5",
+            "cdp.duplex": "1"
+          },
+          "VoIP VLAN Reply: VLAN 2224": {
+            "cdp.tlv.type": "0x0000000e",
+            "cdp.tlv.len": "7",
+            "cdp.data": "01",
+            "cdp.voice_vlan": "2224"
+          },
+          "Trust Bitmap: 0x00": {
+            "cdp.tlv.type": "0x00000012",
+            "cdp.tlv.len": "5",
+            "cdp.trust_bitmap": "0x00000000"
+          },
+          "Untrusted port CoS: 0x00": {
+            "cdp.tlv.type": "0x00000013",
+            "cdp.tlv.len": "5",
+            "cdp.untrusted_port_cos": "0x00000000"
+          },
+          "Management Addresses": {
+            "cdp.tlv.type": "0x00000016",
+            "cdp.tlv.len": "17",
+            "cdp.number_of_addresses": "1",
+            "IP address: 10.10.250.7": {
+              "cdp.protocol_type": "0x00000001",
+              "cdp.protocol_length": "1",
+              "cdp.protocol": "cc",
+              "cdp.address_length": "4",
+              "cdp.nrgyz.ip_address": "10.10.250.7"
+            }
+          },
+          "Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR": {
+            "cdp.tlv.type": "0x00001009",
+            "cdp.tlv.len": "41",
+            "cdp.platform": "PID:C9300-48UN,VID:V02,SN:FCW2426D0LR"
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,762 @@
+Frame 1087: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits) on interface eth0, id 0
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 19, 2022 00:48:54.072424827 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1668818934.072424827 seconds
+    [Time delta from previous captured frame: 0.020602380 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 23.049937775 seconds]
+    Frame Number: 1087
+    Frame Length: 479 bytes (3832 bits)
+    Capture Length: 479 bytes (3832 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:llc:cdp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Cisco_95:48:04 (90:77:ee:95:48:04)
+        Address: Cisco_95:48:04 (90:77:ee:95:48:04)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Length: 465
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = IG Bit: Individual
+    SSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x3)
+    Organization Code: 00:00:0c (Cisco Systems, Inc)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x4f32 [correct]
+    [Checksum Status: Good]
+    Device ID: NI7083-AS01-9K.net.carleton.ca
+        Type: Device ID (0x0001)
+        Length: 34
+        Device ID: NI7083-AS01-9K.net.carleton.ca
+    Software Version
+        Type: Software version (0x0005)
+        Length: 256
+        Software version: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)
+        Software version: Technical Support: http://www.cisco.com/techsupport
+        Software version: Copyright (c) 1986-2019 by Cisco Systems, Inc.
+        Software version: Compiled Tue 19-Nov-19 10:04 by mcpre
+    Platform: cisco C9300-48UN
+        Type: Platform (0x0006)
+        Length: 20
+        Platform: cisco C9300-48UN
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Port ID: FiveGigabitEthernet3/0/4
+        Type: Port ID (0x0003)
+        Length: 28
+        Sent through Interface: FiveGigabitEthernet3/0/4
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000028
+            .... .... .... .... .... .... .... ...0 = Router: No
+            .... .... .... .... .... .... .... ..0. = Transparent Bridge: No
+            .... .... .... .... .... .... .... .0.. = Source Route Bridge: No
+            .... .... .... .... .... .... .... 1... = Switch: Yes
+            .... .... .... .... .... .... ...0 .... = Host: No
+            .... .... .... .... .... .... ..1. .... = IGMP capable: Yes
+            .... .... .... .... .... .... .0.. .... = Repeater: No
+            .... .... .... .... .... .... 0... .... = VoIP Phone: No
+            .... .... .... .... .... ...0 .... .... = Remotely Managed Device: No
+            .... .... .... .... .... ..0. .... .... = CVTA/STP Dispute Resolution/Cisco VT Camera: No
+            .... .... .... .... .... .0.. .... .... = Two Port Mac Relay: No
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Native VLAN: 301
+        Type: Native VLAN (0x000a)
+        Length: 6
+        Native VLAN: 301
+    Duplex: Full
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Full
+    VoIP VLAN Reply: VLAN 2224
+        Type: VoIP VLAN Reply (0x000e)
+        Length: 7
+        Data: 01
+        Voice VLAN: 2224
+    Trust Bitmap: 0x00
+        Type: Trust Bitmap (0x0012)
+        Length: 5
+        Trust Bitmap: 0x00
+    Untrusted port CoS: 0x00
+        Type: Untrusted Port CoS (0x0013)
+        Length: 5
+        Untrusted port CoS: 0x00
+    Management Addresses
+        Type: Management Address (0x0016)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+        Type: Radio2 channel (0x1009)
+        Length: 41
+        Platform: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+
+Frame 3852: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits) on interface eth0, id 0
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 19, 2022 00:49:51.318749409 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1668818991.318749409 seconds
+    [Time delta from previous captured frame: 0.046905603 seconds]
+    [Time delta from previous displayed frame: 57.246324582 seconds]
+    [Time since reference or first frame: 80.296262357 seconds]
+    Frame Number: 3852
+    Frame Length: 479 bytes (3832 bits)
+    Capture Length: 479 bytes (3832 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:llc:cdp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Cisco_95:48:04 (90:77:ee:95:48:04)
+        Address: Cisco_95:48:04 (90:77:ee:95:48:04)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Length: 465
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = IG Bit: Individual
+    SSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x3)
+    Organization Code: 00:00:0c (Cisco Systems, Inc)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x4f32 [correct]
+    [Checksum Status: Good]
+    Device ID: NI7083-AS01-9K.net.carleton.ca
+        Type: Device ID (0x0001)
+        Length: 34
+        Device ID: NI7083-AS01-9K.net.carleton.ca
+    Software Version
+        Type: Software version (0x0005)
+        Length: 256
+        Software version: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)
+        Software version: Technical Support: http://www.cisco.com/techsupport
+        Software version: Copyright (c) 1986-2019 by Cisco Systems, Inc.
+        Software version: Compiled Tue 19-Nov-19 10:04 by mcpre
+    Platform: cisco C9300-48UN
+        Type: Platform (0x0006)
+        Length: 20
+        Platform: cisco C9300-48UN
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Port ID: FiveGigabitEthernet3/0/4
+        Type: Port ID (0x0003)
+        Length: 28
+        Sent through Interface: FiveGigabitEthernet3/0/4
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000028
+            .... .... .... .... .... .... .... ...0 = Router: No
+            .... .... .... .... .... .... .... ..0. = Transparent Bridge: No
+            .... .... .... .... .... .... .... .0.. = Source Route Bridge: No
+            .... .... .... .... .... .... .... 1... = Switch: Yes
+            .... .... .... .... .... .... ...0 .... = Host: No
+            .... .... .... .... .... .... ..1. .... = IGMP capable: Yes
+            .... .... .... .... .... .... .0.. .... = Repeater: No
+            .... .... .... .... .... .... 0... .... = VoIP Phone: No
+            .... .... .... .... .... ...0 .... .... = Remotely Managed Device: No
+            .... .... .... .... .... ..0. .... .... = CVTA/STP Dispute Resolution/Cisco VT Camera: No
+            .... .... .... .... .... .0.. .... .... = Two Port Mac Relay: No
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Native VLAN: 301
+        Type: Native VLAN (0x000a)
+        Length: 6
+        Native VLAN: 301
+    Duplex: Full
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Full
+    VoIP VLAN Reply: VLAN 2224
+        Type: VoIP VLAN Reply (0x000e)
+        Length: 7
+        Data: 01
+        Voice VLAN: 2224
+    Trust Bitmap: 0x00
+        Type: Trust Bitmap (0x0012)
+        Length: 5
+        Trust Bitmap: 0x00
+    Untrusted port CoS: 0x00
+        Type: Untrusted Port CoS (0x0013)
+        Length: 5
+        Untrusted port CoS: 0x00
+    Management Addresses
+        Type: Management Address (0x0016)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+        Type: Radio2 channel (0x1009)
+        Length: 41
+        Platform: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+
+Frame 6391: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits) on interface eth0, id 0
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 19, 2022 00:50:43.334842318 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1668819043.334842318 seconds
+    [Time delta from previous captured frame: 0.002590923 seconds]
+    [Time delta from previous displayed frame: 52.016092909 seconds]
+    [Time since reference or first frame: 132.312355266 seconds]
+    Frame Number: 6391
+    Frame Length: 479 bytes (3832 bits)
+    Capture Length: 479 bytes (3832 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:llc:cdp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Cisco_95:48:04 (90:77:ee:95:48:04)
+        Address: Cisco_95:48:04 (90:77:ee:95:48:04)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Length: 465
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = IG Bit: Individual
+    SSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x3)
+    Organization Code: 00:00:0c (Cisco Systems, Inc)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x4f32 [correct]
+    [Checksum Status: Good]
+    Device ID: NI7083-AS01-9K.net.carleton.ca
+        Type: Device ID (0x0001)
+        Length: 34
+        Device ID: NI7083-AS01-9K.net.carleton.ca
+    Software Version
+        Type: Software version (0x0005)
+        Length: 256
+        Software version: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)
+        Software version: Technical Support: http://www.cisco.com/techsupport
+        Software version: Copyright (c) 1986-2019 by Cisco Systems, Inc.
+        Software version: Compiled Tue 19-Nov-19 10:04 by mcpre
+    Platform: cisco C9300-48UN
+        Type: Platform (0x0006)
+        Length: 20
+        Platform: cisco C9300-48UN
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Port ID: FiveGigabitEthernet3/0/4
+        Type: Port ID (0x0003)
+        Length: 28
+        Sent through Interface: FiveGigabitEthernet3/0/4
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000028
+            .... .... .... .... .... .... .... ...0 = Router: No
+            .... .... .... .... .... .... .... ..0. = Transparent Bridge: No
+            .... .... .... .... .... .... .... .0.. = Source Route Bridge: No
+            .... .... .... .... .... .... .... 1... = Switch: Yes
+            .... .... .... .... .... .... ...0 .... = Host: No
+            .... .... .... .... .... .... ..1. .... = IGMP capable: Yes
+            .... .... .... .... .... .... .0.. .... = Repeater: No
+            .... .... .... .... .... .... 0... .... = VoIP Phone: No
+            .... .... .... .... .... ...0 .... .... = Remotely Managed Device: No
+            .... .... .... .... .... ..0. .... .... = CVTA/STP Dispute Resolution/Cisco VT Camera: No
+            .... .... .... .... .... .0.. .... .... = Two Port Mac Relay: No
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Native VLAN: 301
+        Type: Native VLAN (0x000a)
+        Length: 6
+        Native VLAN: 301
+    Duplex: Full
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Full
+    VoIP VLAN Reply: VLAN 2224
+        Type: VoIP VLAN Reply (0x000e)
+        Length: 7
+        Data: 01
+        Voice VLAN: 2224
+    Trust Bitmap: 0x00
+        Type: Trust Bitmap (0x0012)
+        Length: 5
+        Trust Bitmap: 0x00
+    Untrusted port CoS: 0x00
+        Type: Untrusted Port CoS (0x0013)
+        Length: 5
+        Untrusted port CoS: 0x00
+    Management Addresses
+        Type: Management Address (0x0016)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+        Type: Radio2 channel (0x1009)
+        Length: 41
+        Platform: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+
+Frame 8993: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits) on interface eth0, id 0
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 19, 2022 00:51:32.994058092 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1668819092.994058092 seconds
+    [Time delta from previous captured frame: 0.007133790 seconds]
+    [Time delta from previous displayed frame: 49.659215774 seconds]
+    [Time since reference or first frame: 181.971571040 seconds]
+    Frame Number: 8993
+    Frame Length: 479 bytes (3832 bits)
+    Capture Length: 479 bytes (3832 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:llc:cdp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Cisco_95:48:04 (90:77:ee:95:48:04)
+        Address: Cisco_95:48:04 (90:77:ee:95:48:04)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Length: 465
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = IG Bit: Individual
+    SSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x3)
+    Organization Code: 00:00:0c (Cisco Systems, Inc)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x4f32 [correct]
+    [Checksum Status: Good]
+    Device ID: NI7083-AS01-9K.net.carleton.ca
+        Type: Device ID (0x0001)
+        Length: 34
+        Device ID: NI7083-AS01-9K.net.carleton.ca
+    Software Version
+        Type: Software version (0x0005)
+        Length: 256
+        Software version: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)
+        Software version: Technical Support: http://www.cisco.com/techsupport
+        Software version: Copyright (c) 1986-2019 by Cisco Systems, Inc.
+        Software version: Compiled Tue 19-Nov-19 10:04 by mcpre
+    Platform: cisco C9300-48UN
+        Type: Platform (0x0006)
+        Length: 20
+        Platform: cisco C9300-48UN
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Port ID: FiveGigabitEthernet3/0/4
+        Type: Port ID (0x0003)
+        Length: 28
+        Sent through Interface: FiveGigabitEthernet3/0/4
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000028
+            .... .... .... .... .... .... .... ...0 = Router: No
+            .... .... .... .... .... .... .... ..0. = Transparent Bridge: No
+            .... .... .... .... .... .... .... .0.. = Source Route Bridge: No
+            .... .... .... .... .... .... .... 1... = Switch: Yes
+            .... .... .... .... .... .... ...0 .... = Host: No
+            .... .... .... .... .... .... ..1. .... = IGMP capable: Yes
+            .... .... .... .... .... .... .0.. .... = Repeater: No
+            .... .... .... .... .... .... 0... .... = VoIP Phone: No
+            .... .... .... .... .... ...0 .... .... = Remotely Managed Device: No
+            .... .... .... .... .... ..0. .... .... = CVTA/STP Dispute Resolution/Cisco VT Camera: No
+            .... .... .... .... .... .0.. .... .... = Two Port Mac Relay: No
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Native VLAN: 301
+        Type: Native VLAN (0x000a)
+        Length: 6
+        Native VLAN: 301
+    Duplex: Full
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Full
+    VoIP VLAN Reply: VLAN 2224
+        Type: VoIP VLAN Reply (0x000e)
+        Length: 7
+        Data: 01
+        Voice VLAN: 2224
+    Trust Bitmap: 0x00
+        Type: Trust Bitmap (0x0012)
+        Length: 5
+        Trust Bitmap: 0x00
+    Untrusted port CoS: 0x00
+        Type: Untrusted Port CoS (0x0013)
+        Length: 5
+        Untrusted port CoS: 0x00
+    Management Addresses
+        Type: Management Address (0x0016)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+        Type: Radio2 channel (0x1009)
+        Length: 41
+        Platform: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+
+Frame 11555: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits) on interface eth0, id 0
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 19, 2022 00:52:26.418968773 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1668819146.418968773 seconds
+    [Time delta from previous captured frame: 0.007770773 seconds]
+    [Time delta from previous displayed frame: 53.424910681 seconds]
+    [Time since reference or first frame: 235.396481721 seconds]
+    Frame Number: 11555
+    Frame Length: 479 bytes (3832 bits)
+    Capture Length: 479 bytes (3832 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:llc:cdp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Cisco_95:48:04 (90:77:ee:95:48:04)
+        Address: Cisco_95:48:04 (90:77:ee:95:48:04)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Length: 465
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = IG Bit: Individual
+    SSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x3)
+    Organization Code: 00:00:0c (Cisco Systems, Inc)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x4f32 [correct]
+    [Checksum Status: Good]
+    Device ID: NI7083-AS01-9K.net.carleton.ca
+        Type: Device ID (0x0001)
+        Length: 34
+        Device ID: NI7083-AS01-9K.net.carleton.ca
+    Software Version
+        Type: Software version (0x0005)
+        Length: 256
+        Software version: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)
+        Software version: Technical Support: http://www.cisco.com/techsupport
+        Software version: Copyright (c) 1986-2019 by Cisco Systems, Inc.
+        Software version: Compiled Tue 19-Nov-19 10:04 by mcpre
+    Platform: cisco C9300-48UN
+        Type: Platform (0x0006)
+        Length: 20
+        Platform: cisco C9300-48UN
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Port ID: FiveGigabitEthernet3/0/4
+        Type: Port ID (0x0003)
+        Length: 28
+        Sent through Interface: FiveGigabitEthernet3/0/4
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000028
+            .... .... .... .... .... .... .... ...0 = Router: No
+            .... .... .... .... .... .... .... ..0. = Transparent Bridge: No
+            .... .... .... .... .... .... .... .0.. = Source Route Bridge: No
+            .... .... .... .... .... .... .... 1... = Switch: Yes
+            .... .... .... .... .... .... ...0 .... = Host: No
+            .... .... .... .... .... .... ..1. .... = IGMP capable: Yes
+            .... .... .... .... .... .... .0.. .... = Repeater: No
+            .... .... .... .... .... .... 0... .... = VoIP Phone: No
+            .... .... .... .... .... ...0 .... .... = Remotely Managed Device: No
+            .... .... .... .... .... ..0. .... .... = CVTA/STP Dispute Resolution/Cisco VT Camera: No
+            .... .... .... .... .... .0.. .... .... = Two Port Mac Relay: No
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Native VLAN: 301
+        Type: Native VLAN (0x000a)
+        Length: 6
+        Native VLAN: 301
+    Duplex: Full
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Full
+    VoIP VLAN Reply: VLAN 2224
+        Type: VoIP VLAN Reply (0x000e)
+        Length: 7
+        Data: 01
+        Voice VLAN: 2224
+    Trust Bitmap: 0x00
+        Type: Trust Bitmap (0x0012)
+        Length: 5
+        Trust Bitmap: 0x00
+    Untrusted port CoS: 0x00
+        Type: Untrusted Port CoS (0x0013)
+        Length: 5
+        Untrusted port CoS: 0x00
+    Management Addresses
+        Type: Management Address (0x0016)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+        Type: Radio2 channel (0x1009)
+        Length: 41
+        Platform: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+
+Frame 14363: 479 bytes on wire (3832 bits), 479 bytes captured (3832 bits) on interface eth0, id 0
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 19, 2022 00:53:26.334089136 GMT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1668819206.334089136 seconds
+    [Time delta from previous captured frame: 0.033232034 seconds]
+    [Time delta from previous displayed frame: 59.915120363 seconds]
+    [Time since reference or first frame: 295.311602084 seconds]
+    Frame Number: 14363
+    Frame Length: 479 bytes (3832 bits)
+    Capture Length: 479 bytes (3832 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:llc:cdp]
+IEEE 802.3 Ethernet 
+    Destination: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        Address: CDP/VTP/DTP/PAgP/UDLD (01:00:0c:cc:cc:cc)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: Cisco_95:48:04 (90:77:ee:95:48:04)
+        Address: Cisco_95:48:04 (90:77:ee:95:48:04)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Length: 465
+Logical-Link Control
+    DSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = IG Bit: Individual
+    SSAP: SNAP (0xaa)
+        1010 101. = SAP: SNAP
+        .... ...0 = CR Bit: Command
+    Control field: U, func=UI (0x03)
+        000. 00.. = Command: Unnumbered Information (0x00)
+        .... ..11 = Frame type: Unnumbered frame (0x3)
+    Organization Code: 00:00:0c (Cisco Systems, Inc)
+    PID: CDP (0x2000)
+Cisco Discovery Protocol
+    Version: 2
+    TTL: 180 seconds
+    Checksum: 0x4f32 [correct]
+    [Checksum Status: Good]
+    Device ID: NI7083-AS01-9K.net.carleton.ca
+        Type: Device ID (0x0001)
+        Length: 34
+        Device ID: NI7083-AS01-9K.net.carleton.ca
+    Software Version
+        Type: Software version (0x0005)
+        Length: 256
+        Software version: Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.02, RELEASE SOFTWARE (fc2)
+        Software version: Technical Support: http://www.cisco.com/techsupport
+        Software version: Copyright (c) 1986-2019 by Cisco Systems, Inc.
+        Software version: Compiled Tue 19-Nov-19 10:04 by mcpre
+    Platform: cisco C9300-48UN
+        Type: Platform (0x0006)
+        Length: 20
+        Platform: cisco C9300-48UN
+    Addresses
+        Type: Addresses (0x0002)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Port ID: FiveGigabitEthernet3/0/4
+        Type: Port ID (0x0003)
+        Length: 28
+        Sent through Interface: FiveGigabitEthernet3/0/4
+    Capabilities
+        Type: Capabilities (0x0004)
+        Length: 8
+        Capabilities: 0x00000028
+            .... .... .... .... .... .... .... ...0 = Router: No
+            .... .... .... .... .... .... .... ..0. = Transparent Bridge: No
+            .... .... .... .... .... .... .... .0.. = Source Route Bridge: No
+            .... .... .... .... .... .... .... 1... = Switch: Yes
+            .... .... .... .... .... .... ...0 .... = Host: No
+            .... .... .... .... .... .... ..1. .... = IGMP capable: Yes
+            .... .... .... .... .... .... .0.. .... = Repeater: No
+            .... .... .... .... .... .... 0... .... = VoIP Phone: No
+            .... .... .... .... .... ...0 .... .... = Remotely Managed Device: No
+            .... .... .... .... .... ..0. .... .... = CVTA/STP Dispute Resolution/Cisco VT Camera: No
+            .... .... .... .... .... .0.. .... .... = Two Port Mac Relay: No
+    VTP Management Domain: 
+        Type: VTP Management Domain (0x0009)
+        Length: 4
+        VTP Management Domain: 
+    Native VLAN: 301
+        Type: Native VLAN (0x000a)
+        Length: 6
+        Native VLAN: 301
+    Duplex: Full
+        Type: Duplex (0x000b)
+        Length: 5
+        Duplex: Full
+    VoIP VLAN Reply: VLAN 2224
+        Type: VoIP VLAN Reply (0x000e)
+        Length: 7
+        Data: 01
+        Voice VLAN: 2224
+    Trust Bitmap: 0x00
+        Type: Trust Bitmap (0x0012)
+        Length: 5
+        Trust Bitmap: 0x00
+    Untrusted port CoS: 0x00
+        Type: Untrusted Port CoS (0x0013)
+        Length: 5
+        Untrusted port CoS: 0x00
+    Management Addresses
+        Type: Management Address (0x0016)
+        Length: 17
+        Number of addresses: 1
+        IP address: 10.10.250.7
+            Protocol type: NLPID (0x01)
+            Protocol length: 1
+            Protocol: IP
+            Address length: 4
+            IP Address: 10.10.250.7
+    Radio 2 channel: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+        Type: Radio2 channel (0x1009)
+        Length: 41
+        Platform: PID:C9300-48UN,VID:V02,SN:FCW2426D0LR
+
