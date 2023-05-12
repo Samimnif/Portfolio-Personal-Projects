@@ -8,16 +8,26 @@ if os.path.exists(libdir):
     sys.path.append(libdir)
 
 import logging
-from waveshare_epd import epd2in13b_V4
+from waveshare_epd import epd2in13b_V4, epd2in13_V3
 import time
 from PIL import Image,ImageDraw,ImageFont
 import traceback
 
 logging.basicConfig(level=logging.DEBUG)
+epd = epd2in13b_V4.EPD()
+tt = epd2in13_V3.EPD()
+epd.init()
+font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
+LBlackimage = Image.new('1', (epd.height, epd.width, ), 255)  # 122*250
+LRYimage = Image.new('1', (epd.height, epd.width), 255)  # 122*250
+newimage = Image.open(os.path.join(picdir, 'sprott.bmp'))
+drawry = ImageDraw.Draw(LRYimage)
+drawry.text((40, 0), 'SM Solutions ©', font = font24, fill = 0)
+LBlackimage.paste(newimage, (50, 20))
+epd.display(epd.getbuffer(LBlackimage), epd.getbuffer(LRYimage))
+time.sleep(2)
 
 def result_display(ip, result):
-    epd = epd2in13b_V4.EPD()
-    epd.init()
     epd.clear()
     font20 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 20)
     font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
@@ -38,90 +48,48 @@ def result_display(ip, result):
     drawblack.text((0, 100), f'VoIP VLAN: {result["VOIP"]}', font = font18, fill = 0)
     LBlackimage.paste(newimage, (200, 0))
     epd.display(epd.getbuffer(LBlackimage), epd.getbuffer(LRYimage))
-    time.sleep(20)
-
-    print('done func')
     epd.sleep()
-
-try:
-    '''
-    logging.info("epd2in13b_V4.txt")
-    
-    epd = epd2in13b_V4.EPD()
-    logging.info("init and Clear")
-    epd.init()
-    epd.Clear()
-    time.sleep(1)
-    
-    # Drawing on the image
-    logging.info("Drawing")    
+''' # Just in case, but not useful for now, too much refresh 
+def scanning_page():
+    epd.clear()
     font20 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 20)
     font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
-    
-    # Drawing on the Horizontal image
-    logging.info("1.Drawing on the Horizontal image...") 
-    HBlackimage = Image.new('1', (epd.height, epd.width), 255)  # 250*122
-    HRYimage = Image.new('1', (epd.height, epd.width), 255)  # 250*122
-    drawblack = ImageDraw.Draw(HBlackimage)
-    drawry = ImageDraw.Draw(HRYimage)
-    drawblack.text((10, 0), 'hello world', font = font20, fill = 0)
-    drawblack.text((10, 20), '2.13inch e-Paper b V4', font = font20, fill = 0)
-    drawblack.text((120, 0), u'微雪电子', font = font20, fill = 0)    
-    drawblack.line((20, 50, 70, 100), fill = 0)
-    drawblack.line((70, 50, 20, 100), fill = 0)
-    drawblack.rectangle((20, 50, 70, 100), outline = 0)    
-    drawry.line((165, 50, 165, 100), fill = 0)
-    drawry.line((140, 75, 190, 75), fill = 0)
-    drawry.arc((140, 50, 190, 100), 0, 360, fill = 0)
-    drawry.rectangle((80, 50, 130, 100), fill = 0)
-    drawry.chord((85, 55, 125, 95), 0, 360, fill =1)
-    epd.display(epd.getbuffer(HBlackimage), epd.getbuffer(HRYimage))
-    time.sleep(2)
-    
-    # Drawing on the Vertical image
-    logging.info("2.Drawing on the Vertical image...")
-    LBlackimage = Image.new('1', (epd.width, epd.height), 255)  # 122*250
-    LRYimage = Image.new('1', (epd.width, epd.height), 255)  # 122*250
+    LBlackimage = Image.new('1', (epd.height, epd.width, ), 255)  # 122*250
+    LRYimage = Image.new('1', (epd.height, epd.width), 255)  # 122*250
     drawblack = ImageDraw.Draw(LBlackimage)
     drawry = ImageDraw.Draw(LRYimage)
-    drawblack.text((2, 0), 'hello world', font = font18, fill = 0)
-    drawblack.text((2, 20), '2.13 epd b V4', font = font18, fill = 0)
-    drawblack.text((20, 50), u'微雪电子', font = font18, fill = 0)
-    drawblack.line((10, 90, 60, 140), fill = 0)
-    drawblack.line((60, 90, 10, 140), fill = 0)
-    drawblack.rectangle((10, 90, 60, 140), outline = 0)
-    drawry.rectangle((10, 150, 60, 200), fill = 0)
-    drawry.arc((15, 95, 55, 135), 0, 360, fill = 0)
-    drawry.chord((15, 155, 55, 195), 0, 360, fill =1)
-    epd.display(epd.getbuffer(LBlackimage), epd.getbuffer(LRYimage))
-    time.sleep(2)
-    
-    logging.info("3.read bmp file")
-    Blackimage = Image.open(os.path.join(picdir, 'B_Logo_SPROTT-H-RGBFullColour_190821.bmp'))
-    RYimage = Image.open(os.path.join(picdir, 'B_Logo_SPROTT-H-RGBFullColour_190821.bmp'))
-    epd.display(epd.getbuffer(Blackimage), epd.getbuffer(RYimage))
-    time.sleep(2)
-    
-    logging.info("4.read bmp file on window")
-    blackimage1 = Image.new('1', (epd.height, epd.width), 255)  # 250*122
-    redimage1 = Image.new('1', (epd.height, epd.width), 255)  # 250*122
-    newimage = Image.open(os.path.join(picdir, '100x100.bmp'))
-    blackimage1.paste(newimage, (0,0))
-    epd.display(epd.getbuffer(blackimage1), epd.getbuffer(redimage1))
-    
-    logging.info("Clear...")
-    epd.init()
-    epd.clear()
-    
-    logging.info("Goto Sleep...")
-    epd.sleep() '''
 
-    result_display('137.172.168.1',{'VLAN': '301', 'Port': 'FiveGigabitEthernet3/0/4', 'LAN': 'NI7083-AS01-9K.net.carleton.ca', 'VOIP': '2224'})
-        
-except IOError as e:
-    logging.info(e)
+    drawry.text((80, 0), 'Scanning', font = font20, fill = 0)
+    drawblack.rectangle((0, 50, 249, 80), outline = 0)
+    epd.display(epd.getbuffer(LBlackimage), epd.getbuffer(LRYimage))
+    for t in range(1, 4):
+        drawry.rectangle((3, 53, t*82, 77), fill = 0)
+        epd.display(epd.getbuffer(LBlackimage), epd.getbuffer(LRYimage))
+    epd.sleep()
+'''
+def scanning_page():
+    tt.init()
+    tt.Clear(0xFF)
+    font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
+    progress = Image.new('1', (epd.height, epd.width), 255)
+    progress_draw = ImageDraw.Draw(progress)
+    progress_draw.text((80, 0), 'Scanning', font = font24, fill = 0)
     
-except KeyboardInterrupt:    
-    logging.info("ctrl + c:")
-    epd2in13b_V4.epdconfig.module_exit()
-    exit()
+    tt.displayPartBaseImage(tt.getbuffer(progress))
+    progress_draw.rectangle((0, 50, 249, 80), outline = 0)
+    for t in range(1, 50): #248
+        progress_draw.rectangle((3, 53, t*5, 77), fill = 0)
+        tt.displayPartial(tt.getbuffer(progress))
+
+if __name__ == "__main__":
+    try:
+        result_display('137.172.168.1',{'VLAN': '301', 'Port': 'FiveGigabitEthernet3/0/4', 'LAN': 'NI7083-AS01-9K.net.carleton.ca', 'VOIP': '2224'})
+        scanning_page()
+    except IOError as e:
+        logging.info(e)
+        
+    except KeyboardInterrupt:    
+        logging.info("ctrl + c:")
+        epd2in13b_V4.epdconfig.module_exit()
+        exit()
+#result_display('137.172.168.1',{'VLAN': '301', 'Port': 'FiveGigabitEthernet3/0/4', 'LAN': 'NI7083-AS01-9K.net.carleton.ca', 'VOIP': '2224'})
