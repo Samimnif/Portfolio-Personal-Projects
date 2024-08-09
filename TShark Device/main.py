@@ -23,7 +23,7 @@ scanning_d.start()
 os.system('tshark -2 -R "cdp" -r tsharkScan.pcap -T json > output.json')
 os.system("tshark -r file -V cdp > output.txt")
 data = getData("output.json")
-os.system(f'cp output.json {roomNo}.json')
+#os.system(f'cp output.json {roomNo}.json')
 print(data)
 if scanning_d.is_alive == False:
     result_display(ipAddress, data)
