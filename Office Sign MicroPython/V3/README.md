@@ -41,15 +41,15 @@ The office Sign is composed of:
 
 | Esp32 Prototype | Case Design |
 |----| ---|
-|![Prototype First Idea](/Office Sign Micropython/V3/imgs/IMG_5298.jpeg)| ![Case Design 3d Printed](/Office Sign Micropython/V3/imgs/IMG_5405.jpeg) |
+|![Prototype First Idea](/V3/imgs/IMG_5298.jpeg)| ![Case Design 3d Printed](/V3/imgs/IMG_5405.jpeg) |
 
 | Back Wiring | Fron Wiring |
 |----| ---|
-| ![Back Wiring for Buttons](/Office Sign Micropython/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/Office Sign Micropython/V3/imgs/IMG_5408.jpeg) |
+| ![Back Wiring for Buttons](/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/V3/imgs/IMG_5408.jpeg) |
 
 | Close Up Front Wiring |
 |----|
-| ![Front wireing for the led matrix](/Office Sign Micropython/V3/imgs/IMG_5409.jpeg)|
+| ![Front wireing for the led matrix](/Office%20Sign%20MicroPython/V3/imgs/IMG_5409.jpeg)|
 
 
 
