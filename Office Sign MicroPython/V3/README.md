@@ -41,11 +41,11 @@ The office Sign is composed of:
 
 | Esp32 Prototype | Case Design |
 |----| ---|
-|![Prototype First Idea](/V3/imgs/IMG_5298.jpeg)| ![Case Design 3d Printed](/V3/imgs/IMG_5405.jpeg) |
+|![Prototype First Idea](/Office%20Sign%20MicroPython/V3/imgs/IMG_5298.jpeg)| ![Case Design 3d Printed](/Office%20Sign%20MicroPython/V3/imgs/IMG_5405.jpeg) |
 
 | Back Wiring | Fron Wiring |
 |----| ---|
-| ![Back Wiring for Buttons](/"Office Sign Micropython"/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/"Office Sign Micropython"/V3/imgs/IMG_5408.jpeg) |
+| ![Back Wiring for Buttons](/Office%20Sign%20MicroPython/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/Office%20Sign%20MicroPython/V3/imgs/IMG_5408.jpeg) |
 
 | Close Up Front Wiring |
 |----|
@@ -71,8 +71,8 @@ The office Sign is composed of:
 
 | Front Design Startup | Ready Screen |
 | ------------ | ------------ |
-| ![startup screen](/V3/imgs/IMG_5411.jpeg) | ![Ready Screen](/V3/imgs/IMG_5412.jpeg) |
+| ![startup screen](/Office%20Sign%20MicroPython/V3/imgs/IMG_5411.jpeg) | ![Ready Screen](/Office%20Sign%20MicroPython/V3/imgs/IMG_5412.jpeg) |
 
 | Sent & Received Screen |
 | --- |
-| ![Sent & Received](/V3/imgs/IMG_5413.jpeg) | 
+| ![Sent & Received](/Office%20Sign%20MicroPython/V3/imgs/IMG_5413.jpeg) | 
