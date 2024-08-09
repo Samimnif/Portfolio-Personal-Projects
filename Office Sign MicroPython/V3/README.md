@@ -41,15 +41,15 @@ The office Sign is composed of:
 
 | Esp32 Prototype | Case Design |
 |----| ---|
-|![Prototype First Idea](/imgs/IMG_5298.jpeg)| ![Case Design 3d Printed](/imgs/IMG_5405.jpeg) |
+|![Prototype First Idea](/V3/imgs/IMG_5298.jpeg)| ![Case Design 3d Printed](/V3/imgs/IMG_5405.jpeg) |
 
 | Back Wiring | Fron Wiring |
 |----| ---|
-| ![Back Wiring for Buttons](/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/imgs/IMG_5408.jpeg) |
+| ![Back Wiring for Buttons](/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/V3/imgs/IMG_5408.jpeg) |
 
 | Close Up Front Wiring |
 |----|
-| ![Front wireing for the led matrix](/imgs/IMG_5409.jpeg)|
+| ![Front wireing for the led matrix](/V3/imgs/IMG_5409.jpeg)|
 
 
 
@@ -71,8 +71,8 @@ The office Sign is composed of:
 
 | Front Design Startup | Ready Screen |
 | ------------ | ------------ |
-| ![startup screen](/imgs/IMG_5411.jpeg) | ![Ready Screen](/imgs/IMG_5412.jpeg) |
+| ![startup screen](/V3/imgs/IMG_5411.jpeg) | ![Ready Screen](/V3/imgs/IMG_5412.jpeg) |
 
 | Sent & Received Screen |
 | --- |
-| ![Sent & Received](/imgs/IMG_5413.jpeg) | 
+| ![Sent & Received](/V3/imgs/IMG_5413.jpeg) | 
