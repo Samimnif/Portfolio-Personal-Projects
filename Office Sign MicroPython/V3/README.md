@@ -45,7 +45,7 @@ The office Sign is composed of:
 
 | Back Wiring | Fron Wiring |
 |----| ---|
-| ![Back Wiring for Buttons](/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/V3/imgs/IMG_5408.jpeg) |
+| ![Back Wiring for Buttons](/"Office Sign Micropython"/V3/imgs/IMG_5407.jpeg) | ![Front Wireing and Connections](/"Office Sign Micropython"/V3/imgs/IMG_5408.jpeg) |
 
 | Close Up Front Wiring |
 |----|
